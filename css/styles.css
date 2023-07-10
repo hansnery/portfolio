@@ -1,0 +1,138 @@
+.rounded-image {
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+
+.contract-on-hover {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.contract-on-hover:hover {
+  transform: scale(0.95);
+}
+
+.black-gradient-h1 {
+  position: relative;
+  display: inline-block;
+  background-image: linear-gradient(141deg, #969699, #1e1e22);
+  font-size: 65px;
+  text-align: center;
+  letter-spacing: -1.25px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Inter';
+  font-weight: 700;
+}
+
+.has-transparent-background {
+  background-color: transparent !important;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  margin-right: 1rem;
+  width: 130px; /* Adjust the width as desired */
+  height: 40px; /* Adjust the height as desired */
+  border-radius: 50%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  left: 4px;
+}
+
+.toggle input {
+  display: none; /* Hide the checkbox */
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 120%;
+  height: 120%;
+  background-color: #ccc;
+  border-radius: 20px; /* Adjust the border-radius as desired */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Inter';
+  background-color: #2196F3; /* Fallback color */
+  background-image: linear-gradient(to right, #ECEFF1, #CFD8DC); /* Grey gradient */
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 50%; /* Adjust the width as desired */
+  height: calc(100% - 4px); /* Adjust the height as desired */
+  background-color: #ffffff;
+  border-radius: 20px; /* Adjust the border-radius as desired */
+  transition: transform 0.3s;
+}
+
+.toggle input:checked + .slider:before {
+  content: "";
+  transform: translateX(95%); /* Adjust the translation value to match the width of the slider */
+}
+
+.toggle-label {
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  opacity: 1; /* Show the labels by default */
+  pointer-events: none; /* Prevent label interaction */
+  transition: opacity 0.3s;
+  font-family: 'Inter';
+  /* color: #186cb1; */
+  font-weight: 300;
+}
+
+.left-label {
+  left: 19px; /* Adjust the positioning as desired */
+}
+
+.right-label {
+  right: -11px; /* Adjust the positioning as desired */
+}
+
+.toggle input:checked ~ .right-label {
+  /* color: #2196F3; */
+  background-image: linear-gradient(141deg, #85c8ff, #2196F3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Inter';
+  font-weight: 700;
+  position: relative;
+  top: -45px;
+  left: 86px;
+  font-size: large;
+}
+
+.toggle input:not(:checked) ~ .left-label {
+  /* color: #2196F3; */
+  background-image: linear-gradient(141deg, #969699, #1e1e22);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Inter';
+  font-weight: 700;
+  position: relative;
+  top: -45px;
+  left: 17px;
+  font-size: large;
+}
+
+.toggle input:checked + .slider {
+  background-color: #2196F3; /* Fallback color */
+  background-image: linear-gradient(to right, #ECEFF1, #CFD8DC); /* Grey gradient */
+}
