@@ -2,6 +2,22 @@
   min-width: 338px !important;
 }
 
+.navbar-end {
+  position: fixed !important;
+  left: 83.9%;
+  top: 1.5%;
+}
+
+.button-home {
+  position: relative;
+  left: -6%;
+}
+
+.button-about {
+  position: relative;
+  left: -6%;
+}
+
 .rounded-image {
   width: 60px;
   border-radius: 50%;
@@ -11,6 +27,16 @@
 @media (max-width: 640px) {
   .navbar-brand {
     position: relative;
+    left: -15%;
+  }
+
+  .button-home {
+    transform: translateY(-20%);
+    left: -15%;
+  }
+  
+  .button-about {
+    transform: translateY(-20%);
     left: -15%;
   }
 }
