@@ -2,7 +2,13 @@
   width: 60px;
   border-radius: 50%;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-  position: absolute;
+}
+
+@media (max-width: 640px) {
+  .navbar-brand {
+    position: relative;
+    left: -15%;
+  }
 }
 
 .contract-on-hover {
@@ -35,17 +41,18 @@
 .toggle-container {
   display: flex;
   align-items: center;
+  /* position: relative; */
 }
 
 .toggle {
-  position: relative;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   display: inline-block;
-  margin-right: 1rem;
   width: 130px; /* Adjust the width as desired */
   height: 40px; /* Adjust the height as desired */
   border-radius: 50%;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-  left: 4px;
 }
 
 .toggle input {
