@@ -45,12 +45,11 @@
 .toggle-container {
   display: flex;
   align-items: center;
-  /* position: relative; */
 }
 
 .toggle {
   position: fixed;
-  left: 50%;
+  left: 49.7%;
   transform: translateX(-50%);
   display: inline-block;
   width: 130px; /* Adjust the width as desired */
