@@ -78,11 +78,11 @@
 .expand-on-hover {
   display: inline-block;
   transition: transform 0.3s ease;
-  z-index: 1;
 }
 
 .expand-on-hover:hover {
   transform: scale(1.05);
+  z-index: 2;
 }
 
 .contract-on-hover {
