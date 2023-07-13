@@ -34,3 +34,29 @@ checkbox.addEventListener('change', handleCheckboxChange);
 // Get the project elements
 const workProjects = document.querySelectorAll('.work-project');
 const hobbyProjects = document.querySelectorAll('.hobby-project');
+
+document.addEventListener("DOMContentLoaded", function() {
+  var navItems = document.querySelectorAll(".slide-down");
+  var toggle = document.querySelectorAll(".slide-down-toggle");
+  var intro_section = document.querySelectorAll(".intro-section");
+
+  function fadeInFromTop() {
+    navItems.forEach(function(item, index) {
+      setTimeout(function() {
+        item.classList.add("slide-down-show");
+      }, index * 200);
+    });
+    toggle.forEach(function(item, index) {
+      setTimeout(function() {
+        item.classList.add("slide-down-toggle-show");
+      }, index * 200);
+    });
+    intro_section.forEach(function(item, index) {
+      setTimeout(function() {
+        item.classList.add("fade-in");
+      }, index * 200);
+    });
+  }
+
+  fadeInFromTop();
+});

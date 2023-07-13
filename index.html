@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hans Oliveira's Portfolio</title>
+  <title>Hans Oliveira</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,12 +16,12 @@
 
         <div class="navbar-brand pl-2">
           <a class="pt-4 pl-6 ml-6 mr-5" href="https://github.com/hansnery">
-            <figure class="image is-64x64">
+            <figure class="image is-64x64 slide-down">
               <img class="rounded-image contract-on-hover" src="images/hans.png">
             </figure>
           </a>
 
-          <div class="toggle-container">
+          <div class="toggle-container slide-down-toggle">
             <label class="toggle">
               <input type="checkbox" id="myCheckbox">
               <span class="slider"></span>
@@ -37,13 +37,13 @@
           </div> -->
         </div>
         
-        <div class="" id="navbarExampleTransparentExample">
+        <div>
           <div class="navbar-start"></div>
 
           <div class="navbar-end">
 
             <div class="navbar-item p-1">
-              <a class="button pr-2 pl-0 button-home" href="#">
+              <a class="button pr-2 pl-0 button-home slide-down" href="#">
                 <svg class="icon mr-1 ml-1 pl-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path>
                 </svg>
@@ -52,7 +52,7 @@
             </div>
             
             <div class="navbar-item px-1">
-              <a class="button pr-2 pl-0 button-about" href="https://www.linkedin.com/in/hans-nery-buchmeier-de-oliveira-68748496/" target="_blank">
+              <a class="button pr-2 pl-0 button-about slide-down" href="https://www.linkedin.com/in/hans-nery-buchmeier-de-oliveira-68748496/" target="_blank">
                 <svg class="icon mr-1 ml-1 pl-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
                 </svg>
@@ -68,68 +68,74 @@
   </div>
 
   <!-- INTRO -->
-  <div class="container is-flex is-align-items-center is-justify-content-center pt-6 mt-6">
-    <div class="content pt-6 mt-6">
-      <div class="black-gradient-h1">Hello there! I'm Hans.</div>
-      <div class="container is-flex is-align-items-center is-justify-content-center">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left mr-1">
-              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
-              </svg>
-            </div>
-            <div class="media-content">
-              <p class="title is-5">Toronto</p>
+  <section class="intro-section fade-out">
+
+    <div class="container is-flex is-align-items-center is-justify-content-center pt-6 mt-6">
+      <div class="content pt-6 mt-6">
+        <div class="black-gradient-h1">Hello there! I'm Hans.</div>
+        <div class="container is-flex is-align-items-center is-justify-content-center">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left mr-1">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
+                </svg>
+              </div>
+              <div class="media-content">
+                <p class="title is-5">Toronto</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container is-flex is-align-items-center is-justify-content-center">
-    <div class="subtitle is-5 p-4">I'm a Full-stack Developer who will transform your ideas into engaging digital experiences.</div>
-  </div>
-  <div class="container is-flex is-align-items-center is-justify-content-center pt-5 mt-5">
-    <div class="subtitle is-4">Status:&nbsp;</div>
-    <div class="title is-4">
-      Open to Work!
-      <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon mr-1">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
-      </svg>
+
+    <div class="container is-flex is-align-items-center is-justify-content-center">
+      <div class="subtitle is-5 p-4">I'm a Full-stack Developer who will transform your ideas into engaging digital experiences.</div>
     </div>
-  </div>
-  <div class="container is-flex is-align-items-center is-justify-content-center pt-4 mt-4 pb-4 mb-6">
-    <a class="button black-gradient-h1 mx-2 contract-on-hover" href="mailto:hansnery@gmail.com">
-      <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon mr-1">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
-      </svg>
-      Contact Me
-    </a>
-    <a class="button black-gradient-h1 mx-2 contract-on-hover" href="Hans CV.pdf" download target="_blank">
-      <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon mr-1">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path>
-      </svg>
-      Download Resume
-    </a>
-  </div>
 
-  <!-- CONTENT -->
-  <div class="box cta pt-5 mt-6">
-    <p class="has-text-centered">
-      <div class="container is-flex is-align-items-center is-justify-content-center pb-2">
-        <div class="title is-4">Check out my portfolio below:</div>
+    <div class="container is-flex is-align-items-center is-justify-content-center pt-5 mt-5">
+      <div class="subtitle is-4">Status:&nbsp;</div>
+      <div class="title is-4">
+        Open to Work!
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon mr-1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
+        </svg>
       </div>
-    </p>
-  </div>
+    </div>
 
+    <div class="container is-flex is-align-items-center is-justify-content-center pt-4 mt-4 pb-4 mb-6">
+      <a class="button black-gradient-h1 mx-2 contract-on-hover" href="mailto:hansnery@gmail.com">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon mr-1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+        </svg>
+        Contact Me
+      </a>
+      <a class="button black-gradient-h1 mx-2 contract-on-hover" href="Hans CV.pdf" download target="_blank">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon mr-1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path>
+        </svg>
+        Download Resume
+      </a>
+    </div>
+
+    <div class="box cta pt-5 mt-6">
+      <p class="has-text-centered">
+        <div class="container is-flex is-align-items-center is-justify-content-center pb-2">
+          <div class="title is-4">Check out my portfolio below:</div>
+        </div>
+      </p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
   <section class="container">
     <div class="columns is-centered features">
     <!-- WORK PROJECTS -->
 
       <!-- DENISON ROOF EXPERTS -->
-      <div class="column is-3 is-flex work-project">
+      <div class="column is-3 is-flex work-project expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256 mt-5">
@@ -160,7 +166,7 @@
       </div>
 
       <!-- CHOCOLATE DROP -->
-      <div class="column is-3 is-flex work-project">
+      <div class="column is-3 is-flex work-project expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256 mt-5">
@@ -191,7 +197,7 @@
       </div>
 
       <!-- THE BUGGER -->
-      <div class="column is-3 is-flex work-project">
+      <div class="column is-3 is-flex work-project expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256">
@@ -223,7 +229,7 @@
 
     <!-- HOBBY PROJECTS -->
       <!-- AGE OF THE RING: REALMS IN EXILE -->
-      <div class="column is-3 is-flex hobby-project is-hidden mb-5">
+      <div class="column is-3 is-flex hobby-project is-hidden mb-5 expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256 mt-5 p-4">
@@ -248,8 +254,8 @@
         </div>
       </div>
 
-      <!-- Acre Unchained -->
-      <div class="column is-3 is-flex hobby-project is-hidden mb-5">
+      <!-- ACRE UNCHAINED -->
+      <div class="column is-3 is-flex hobby-project is-hidden mb-5 expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256 mt-6 mb-2">
@@ -274,7 +280,7 @@
       </div>
 
       <!-- TURNING POINT 1989 -->
-      <div class="column is-3 is-flex hobby-project is-hidden mb-5">
+      <div class="column is-3 is-flex hobby-project is-hidden mb-5 expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256">
@@ -306,7 +312,7 @@
     <div class="columns is-centered features">
 
       <!-- FLIGHT BOOKER -->
-      <div class="column is-3 is-flex work-project">
+      <div class="column is-3 is-flex work-project expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256">
@@ -331,7 +337,7 @@
       </div>
 
       <!-- MEMBERS ONLY -->
-      <div class="column is-3 is-flex work-project">
+      <div class="column is-3 is-flex work-project expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256">
@@ -356,7 +362,7 @@
       </div>
 
       <!-- PRIVATE EVENTS -->
-      <div class="column is-3 is-flex work-project">
+      <div class="column is-3 is-flex work-project expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256">
@@ -387,7 +393,7 @@
     <div class="columns is-centered features">
 
       <!-- KNIGHTS TRAVAIL -->
-      <div class="column is-3 is-flex work-project">
+      <div class="column is-3 is-flex work-project expand-on-hover">
         <div class="card is-shady">
           <div class="card-image">
             <figure class="image is-256x256">
