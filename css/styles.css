@@ -68,7 +68,7 @@
     transform: translateY(-20%);
     left: -15%;
   }
-  
+
   .button-about {
     transform: translateY(-20%);
     left: -15%;
@@ -104,7 +104,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 700;
 }
 
@@ -136,14 +136,20 @@
   position: relative;
   display: inline-block;
   width: 120%;
-  height: 120%;
+  height: 130%;
+  /* height: 40px; */
+  text-align: center; /* optional: also centers it horizontally */
   background-color: #ccc;
   border-radius: 20px; /* Adjust the border-radius as desired */
   cursor: pointer;
   transition: background-color 0.3s;
-  font-family: 'Inter';
-  background-color: #2196F3; /* Fallback color */
-  background-image: linear-gradient(to right, #ECEFF1, #CFD8DC); /* Grey gradient */
+  font-family: "Inter";
+  background-color: #2196f3; /* Fallback color */
+  background-image: linear-gradient(
+    to right,
+    #eceff1,
+    #cfd8dc
+  ); /* Grey gradient */
 }
 
 .slider:before {
@@ -160,7 +166,9 @@
 
 .toggle input:checked + .slider:before {
   content: "";
-  transform: translateX(95%); /* Adjust the translation value to match the width of the slider */
+  transform: translateX(
+    95%
+  ); /* Adjust the translation value to match the width of the slider */
 }
 
 .toggle-label {
@@ -171,7 +179,7 @@
   opacity: 1; /* Show the labels by default */
   pointer-events: none; /* Prevent label interaction */
   transition: opacity 0.3s;
-  font-family: 'Inter';
+  font-family: "Inter";
   /* color: #186cb1; */
   font-weight: 300;
 }
@@ -186,11 +194,11 @@
 
 .toggle input:checked ~ .right-label {
   /* color: #2196F3; */
-  background-image: linear-gradient(141deg, #85c8ff, #2196F3);
+  background-image: linear-gradient(141deg, #85c8ff, #2196f3);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 700;
   position: relative;
   top: -45px;
@@ -204,7 +212,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 700;
   position: relative;
   top: -45px;
@@ -213,6 +221,121 @@
 }
 
 .toggle input:checked + .slider {
-  background-color: #2196F3; /* Fallback color */
-  background-image: linear-gradient(to right, #ECEFF1, #CFD8DC); /* Grey gradient */
+  background-color: #2196f3; /* Fallback color */
+  background-image: linear-gradient(
+    to right,
+    #eceff1,
+    #cfd8dc
+  ); /* Grey gradient */
+}
+
+/* Toggle Label Transition Styles */
+.toggle-label {
+  transition: opacity 0.3s ease;
+}
+
+/* These selectors use your original styling but add opacity transitions */
+.toggle input:checked ~ .left-label {
+  opacity: 0.5;
+}
+
+.toggle input:not(:checked) ~ .left-label {
+  /* Use original styling for the active left label */
+  background-image: linear-gradient(141deg, #969699, #1e1e22);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Inter";
+  font-weight: 700;
+  position: relative;
+  top: -45px;
+  left: 17px;
+  font-size: large;
+  opacity: 1;
+}
+
+.toggle input:checked ~ .right-label {
+  /* Use original styling for the active right label */
+  background-image: linear-gradient(141deg, #85c8ff, #2196f3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Inter";
+  font-weight: 700;
+  position: relative;
+  top: -45px;
+  left: 86px;
+  font-size: large;
+  opacity: 1;
+}
+
+.toggle input:not(:checked) ~ .right-label {
+  opacity: 0.5;
+}
+
+/* Toggle Label Transition Styles */
+.toggle-label {
+  transition: opacity 0.3s ease;
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  cursor: pointer;
+}
+
+/* These selectors use your original styling but add opacity transitions */
+.toggle input:checked ~ .left-label {
+  opacity: 0.5;
+}
+
+.toggle input:not(:checked) ~ .left-label {
+  /* Use original styling for the active left label */
+  background-image: linear-gradient(141deg, #969699, #1e1e22);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Inter";
+  font-weight: 700;
+  position: relative;
+  top: -45px;
+  left: 17px;
+  font-size: large;
+  opacity: 1;
+}
+
+.toggle input:checked ~ .right-label {
+  /* Use original styling for the active right label */
+  background-image: linear-gradient(141deg, #85c8ff, #2196f3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Inter";
+  font-weight: 700;
+  position: relative;
+  top: -45px;
+  left: 86px;
+  font-size: large;
+  opacity: 1;
+}
+
+.toggle input:not(:checked) ~ .right-label {
+  opacity: 0.5;
+}
+
+/* Cursor styling for toggle */
+.toggle {
+  cursor: pointer;
+}
+
+/* Disable toggle during animation */
+.toggle.animating {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.navbar {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
